@@ -1,7 +1,7 @@
 FROM tomcat
 RUN apt-get update -y
-RUN apt-get install maven -y
 RUN apt-get install default-jdk -y
+RUN apt-get install maven -y
 RUN apt-get install git -y
 RUN cd /home/
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
