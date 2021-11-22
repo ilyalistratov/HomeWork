@@ -3,7 +3,7 @@ RUN apt-get update -y
 RUN apt-get install default-jdk -y
 RUN apt-get install maven -y
 RUN apt-get install git -y
-WORKDIR /home/
+RUN cd /home/
 RUN ls
 RUN pwd
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
@@ -18,6 +18,6 @@ RUN pwd
 WORKDIR /target
 RUN ls
 RUN pwd
-RUN cp hello-1.0 /var/lib/tomcat9/webapps/
+RUN cp hello-1.0 /var/lib/tomcat/webapps/
 RUN ls
 RUN pwd
