@@ -1,4 +1,4 @@
-FROM tomcat
+FROM tomcat:latest
 RUN ls
 RUN pwd
 RUN apt-get update -y
@@ -22,6 +22,6 @@ RUN pwd
 WORKDIR /target
 RUN ls
 RUN pwd
-RUN cp hello-1.0.war /var/lib/tomcat/webapps/
+WORKDIR cp hello-1.0.war /var/lib/tomcat/webapps/
 RUN ls
 RUN pwd
