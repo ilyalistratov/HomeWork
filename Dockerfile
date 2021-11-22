@@ -1,9 +1,13 @@
 FROM tomcat
+RUN ls
+RUN pwd
 RUN apt-get update -y
 RUN apt-get install default-jdk -y
 RUN apt-get install maven -y
 RUN apt-get install git -y
-RUN cd /home/
+RUN ls
+RUN pwd
+WORKDIR /home/
 RUN ls
 RUN pwd
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
