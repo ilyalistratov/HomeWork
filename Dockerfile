@@ -18,6 +18,6 @@ RUN pwd
 WORKDIR /target
 RUN ls
 RUN pwd
-RUN cp hello-1.0 /var/lib/tomcat/webapps/
+RUN cp hello-1.0.war /var/lib/tomcat/webapps/
 RUN ls
 RUN pwd
